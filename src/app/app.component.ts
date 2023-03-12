@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CursoComponents';
+  numero:number=5
+
+  counterProgress:number=0
+  totalCountdown:number= 15
+
+
+  updateProgress($event:any){
+    this.counterProgress= (this.totalCountdown - $event)/this.totalCountdown*100;
+
+  }
+
+  countdownFinish(){
+    console.log('finalizado')
+  }
+
 }
