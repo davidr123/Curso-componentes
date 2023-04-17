@@ -1,0 +1,14 @@
+<div class="timer">
+    <app-progress-bar [progress]="progress"></app-progress-bar>
+  
+    <app-display [time]="counter"></app-display>
+  
+    <div class="buttons">
+
+        <button *ngIf="pause" (click)="toogleCountDown()" >Play</button>
+        <button *ngIf="!pause" (click)="toogleCountDown()" >Pause</button>
+
+        <button (click)="conutInit()">RESTART</button>
+    </div>
+    
+  </div>

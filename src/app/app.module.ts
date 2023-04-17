@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { TimerComponent } from './timer/timer.component';
+import { DisplayComponent } from './display/display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CountdownComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    TimerComponent,
+    DisplayComponent
   ],
   imports: [
     BrowserModule,
